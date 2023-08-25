@@ -2,7 +2,7 @@
 
 This template provides a login generic base for your projects with react.
 
-#how to use:
+# how to use:
 1.- Download the project
 2.- You must have node installed in your computer.
 3.- execute in terminal npm install 
