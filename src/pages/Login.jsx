@@ -8,6 +8,8 @@ function Login() {
   const [password, setPassword] = useState("");
   const [alerta, setAlerta] = useState({});
   const {setAuth} = useAuth();
+  const navigate = useNavigate();
+
   const handleSubmit = async e => {
     e.preventDefault();
     if(email==""|| email.length<6){
@@ -35,6 +37,7 @@ function Login() {
         error:false
       });
       setAuth(data);
+      navigate('/proyectos');
       setPassword("");
       setEmail("");
     }catch(error){
