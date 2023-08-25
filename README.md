@@ -1,4 +1,4 @@
-# React + Vite + Context + Hooks + REACT Router DOM
+# React + Vite + Context + Hooks + REACT Router DOM + TailwindCSS
 
 This template provides a login generic base for your projects with react.
 
