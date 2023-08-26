@@ -1,7 +1,7 @@
 import { useState, useEffect, createContext } from "react";
 import clienteAxions from "../config/clienteAxios";
 const AuthContext = createContext();
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 const AuthProvider = ({children}) => {
     const [auth, setAuth] = useState({});
     const [cargando, setCargando] = useState(true)
@@ -22,7 +22,7 @@ const AuthProvider = ({children}) => {
             try{
                 const {data} = await clienteAxions("/usuarios/profile",config);
                 setAuth(data);
-                navigate('/proyectos');
+                //  navigate('/proyectos');
             }catch(error){
                 setAuth({});
             }
